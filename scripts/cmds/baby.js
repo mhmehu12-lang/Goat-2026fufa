@@ -166,21 +166,9 @@ ${formatted}`
       if (triggers.includes(raw)) {
         await typing(api, threadID, 5000);
         const funny = [
-        "𝐴𝑚𝑖 𝑆𝑎𝑛𝑣𝑖, 𝑡𝑜𝑚𝑎𝑟 𝑗𝑜𝑛𝑛𝑜 𝑘𝑖 𝑘𝑜𝑟𝑡𝑒 𝑝𝑎𝑟𝑖? 😊",
-        "𝐻𝑚𝑚 𝑏𝑜𝑙𝑜 𝐵𝑜𝑠𝑠 😌",
-        "𝐷𝑎𝑘𝑠𝑜 𝑘𝑛𝑜 𝑎𝑚𝑎𝑘𝑒? 👀",
-        "𝐴𝑚𝑖 𝑆𝑎𝑛𝑣𝑖, 𝑘𝑖𝑣𝑎𝑏𝑒 ℎ𝑒𝑙𝑝 𝑘𝑜𝑟𝑡𝑒 𝑝𝑎𝑟𝑖? ✨",
-        "𝐾𝑖 𝑙𝑎𝑔𝑏𝑒 𝑡𝑜𝑚𝑎𝑟? 🌸",
-        "𝐽𝑖 bolen, 𝑜𝑟𝑑𝑒𝑟 𝑑𝑒𝑛 😆",
-        "𝐴𝑚𝑖 𝑒𝑘ℎ𝑎𝑛𝑒𝑖 𝑎𝑠𝑖 🫶",
-        "𝐵𝑜𝑙𝑜 𝑘𝑖 𝑘𝑜𝑟𝑡𝑒 ℎ𝑜𝑏𝑒 💖",
-        "𝐻𝑒ℎ𝑒 𝑎𝑏𝑎𝑟 𝑑𝑎𝑘𝑙𝑎 😚",
-        "𝐴𝑚𝑎𝑟 𝑑𝑜𝑟𝑘𝑎𝑟 𝑝𝑜𝑟𝑠𝑒 𝑛𝑎𝑘𝑖? 🥺",
-        "𝐾𝑖 𝑛𝑖𝑦𝑒 ℎ𝑒𝑙𝑝 𝑐ℎ𝑎𝑖? 🌷",
-        "𝐴𝑚𝑖 𝑆𝑎𝑛𝑣𝑖, 𝑠𝑢𝑛𝑡𝑒𝑐𝑖 🤍",
-        "𝐵𝑜𝑠𝑠 𝑑𝑎𝑘 𝑑𝑖𝑠𝑒, 𝑐ℎ𝑜𝑙𝑒 𝑎𝑠𝑐ℎ𝑖 🏃‍♀️💨",
-        "𝐻𝑚𝑚 𝑗𝑎𝑛 𝑏𝑜𝑙𝑜 ✨",
-        "𝐴𝑚𝑖 𝑟𝑒𝑎𝑑𝑦 😎"
+          "𝘬𝘪 𝘏𝘰𝘪𝘴𝘦 𝘑𝘢𝘯 𝘣𝘰𝘭𝘰 😿", "𝘌𝘵𝘰 𝘋𝘢𝘬𝘰 𝘒𝘦𝘯 𝘚𝘶𝘯𝘴𝘪 𝘛𝘰 🙆‍♀️", "𝘌𝘵𝘰 𝘉𝘰𝘵 𝘉𝘰𝘵 𝘒𝘰𝘳𝘭𝘦 𝘓𝘦𝘢𝘷𝘦 𝘕𝘪𝘮𝘶 🙂",
+          "𝘛𝘶𝘮𝘪 𝘋𝘢𝘬𝘭𝘦𝘪 𝘊𝘰𝘭𝘦 𝘈𝘴𝘪 🙆‍♀️", "ওই জান এতোবার ডাকো কেন 🥹", "আমাকে না ডেকে হামিম ভাই কে প্রোপোজ কর 🌷🫶",
+          "হুম বলো পাখি 🫶🐤 ", "তুমারে রাইতে ভালোবাসি 😘", "আমাকে ডাকছো? 🙂"
         ];
         return message.reply(funny[Math.floor(Math.random() * funny.length)], (err, info) => {
           if (!err) global.GoatBot.onReply.set(info.messageID, { commandName: "baby" });
@@ -188,7 +176,7 @@ ${formatted}`
       }
 
       // prefixes
-      const prefixes = ["baby ","bby ","xan ","bbz ","tuki ","sanvi ","bot "];
+      const prefixes = ["baby ","bby ","xan ","bbz ","mari ","মারিয়া ","bot "];
       const prefix = prefixes.find(p => raw.startsWith(p));
       if (prefix) {
         const q = raw.replace(prefix,"").trim();
